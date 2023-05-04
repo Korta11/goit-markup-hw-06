@@ -429,7 +429,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social-media">
           <p class="title-footer">Social media</p>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
@@ -477,12 +477,14 @@
         <div>
           <h2 class="subscr">Subscribe</h2>
           <div class="subscr-container">
-            <input
-              class="subscr-field"
-              type="text"
-              name="subscribe-field"
-              placeholder="E-mail"
-            />
+            <label>
+              <input
+                class="subscr-field"
+                type="text"
+                name="subscribe-field"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="btn-subscr" type="submit">
               Subscribe<svg class="subscr-icon">
                 <use href="./images/icons.svg#icon-telegram"></use>
@@ -507,21 +509,39 @@
           <form class="form">
             <div class="form-field">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-input" name="name" id="name" />
+              <input
+                type="text"
+                class="form-input"
+                name="name"
+                id="name"
+                required
+              />
               <svg class="icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
             <div class="form-field">
               <label for="phone" class="form-label">Phone</label>
-              <input type="text" class="form-input" name="phone" id="phone" />
+              <input
+                type="text"
+                class="form-input"
+                name="phone"
+                id="phone"
+                required
+              />
               <svg class="icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
             <div class="form-field">
               <label for="email" class="form-label">Email</label>
-              <input type="text" class="form-input" name="email" id="email" />
+              <input
+                type="text"
+                class="form-input"
+                name="email"
+                id="email"
+                required
+              />
               <svg class="icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -545,9 +565,10 @@
               ><span class="custom-checkbox">
                 <svg class="custom-icon">
                   <use href="./images/icons.svg#icon-vector"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
+                </svg> </span
+              ><span class="checkbox-text"
+                >I accept the terms and conditions of the</span
+              >
               <a href="#" class="Privacy">Privacy Policy</a>
             </label>
             <button type="submit" class="btn-submit">Send</button>
