@@ -592,12 +592,15 @@ ul {
 }
 .foother-container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 
 .foother-main {
-  gap: 120px;
+  padding: 0 120px 0 0;
+}
+
+.footer-social-media {
+  padding: 0 80px 0 0;
 }
 
 .footer-social-list {
@@ -758,7 +761,7 @@ ul {
   border-color: rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.form-input:hover,
 .form-input:focus {
   border-color: #4d5ae5;
 }
@@ -775,7 +778,7 @@ ul {
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.form-input:hover ~ .icon,
 .form-input:focus ~ .icon {
   color: #4d5ae5;
 }
@@ -805,10 +808,12 @@ textarea {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
   color: #2e2f42;
   border-color: rgba(46, 47, 66, 0.4);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-comment:hover,
 .form-comment:focus {
   border-color: #4d5ae5;
 }
@@ -819,11 +824,6 @@ textarea {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
-
-.Privacy {
-  color: #4d5ae5;
-}
-
 .btn-submit {
   height: 56px;
   width: 169px;
@@ -843,6 +843,22 @@ textarea {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+.checkbox-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #8e8f99;
+}
+.Privacy {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #4d5ae5;
 }
 .custom-checkbox {
   display: flex;
@@ -888,18 +904,24 @@ textarea {
   width: 264px;
   height: 40px;
   padding-left: 16px;
-  border: 1px solid #ffffff;
   border-radius: 4px;
   background-color: #2e2f42;
   color: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #8e8f99;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscr-field:hover,
+.subscr-field:focus {
+  border: 1px solid #ffffff;
+}
+
 .subscr-field::placeholder {
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #8e8f99;
 }
 .subscr-icon {
   margin-left: 16px;
